@@ -1,0 +1,66 @@
+body {
+    --bacground-color: #eee;
+    --nav-bar-heigth: 3em;
+    --list-color: #ebecf0;
+    --list-width: 20em;
+    --list-margin-top: 2em;
+    --list-min-height: 3em;
+    /* --list-max-height:  */
+    --list-maargin-right: 3em;
+    --card-width: 90%;
+    --card-margin-bottom: .5em;
+    --card-img-width: 100%;
+    --card-height: 20em;
+
+    background-color: var(--bacground-color);
+}
+
+header {
+    height: var(--nav-bar-heigth);
+    border: solid 1px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+.list , .add-list-btn-container {
+    flex-basis: var(--list-width);
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: var(--list-color);
+    margin-top: var(--list-margin-top);
+}
+.add-list-btn-container {
+    width: var(--list-width);
+    height: auto;
+    border: solid red;
+    background-color: var(--list-color);
+}
+
+.add-list-btn-container #add-list-btn {
+    display: block;
+    width: var(--list-width);
+    height: 2.5em;
+}
+.list {
+    
+    min-height: var(--list-min-height);
+    border-radius: 5px;
+    border: solid 1px;
+    margin-right: var(--list-maargin-right);
+}
+
+.card {
+    width: var(--card-width);
+    margin: auto;
+    border: red solid;
+    margin-bottom: var(--card-margin-bottom);
+    height: var(--card-height);
+}
+
+.card .card-img img {
+    width: var(--card-img-width);
+    
+}
